@@ -4,7 +4,9 @@
     <Header />
     <div class="wrapper-content">
       <div class="container">
-        <router-view />
+        <div class="view-sm isCenter">
+          <router-view />
+        </div>
       </div>
     </div>
     <!-- <Footer :links="links" /> -->
@@ -13,18 +15,18 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
+import Header from '@/components/Header';
 // import TheHeader from "@/components/Header";
-import Footer from "@/components/Footer";
+import Footer from '@/components/Footer';
 // import TheFooter from "@/components/Footer";
 
 export default {
   components: {
     Header,
     // Header: TheHeader,
-    Footer,
+    Footer
     // Footer: TheFooter,
-  },
+  }
   // data() {
   //   return {
   //     title: "Template",
